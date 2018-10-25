@@ -46,8 +46,6 @@ The example below will show all steps necessary to use `useStore`:
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
-import "./styles.css";
-
 import { createStore } from "./createStore";
 import { StoreProvider, useStore } from "../";
 
@@ -89,7 +87,7 @@ ReactDOM.render(
 
 ## Acknowledgements
 
-Special thanks to @gaearon and @sophiebits for helping me spot an issue in my initial implementation and showing me how to fix it.
+Special thanks to [@gaearon](https://github.com/gaearon) and [@sophiebits](https://github.com/sophiebits) for helping me spot an issue in my initial implementation and showing me how to fix it.
 
 ## Contributing
 
