@@ -1,6 +1,6 @@
 # ⚓️ useStore
 
-Lightweight (<1kB gzipped) alternative for [react-redux][] using React Hooks.
+Lightweight ([<600B minified + gzipped](https://bundlephobia.com/result?p=use-store@0.0.1)) alternative for [react-redux][] using React Hooks.
 
 
 ```js
