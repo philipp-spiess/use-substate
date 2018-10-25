@@ -1,6 +1,8 @@
 # React Hook: useStore
 
-Lightweight (<1kB gzipped) replacement for [react-redux](https://github.com/reduxjs/react-redux) using React Hooks.
+Lightweight (<1kB gzipped) alternative for [react-redux][] using React Hooks.
+
+__⚠️ `useStore` can also be used together with [react-redux][] in your existing [Redux][] application.__
 
 ```js
 function Example() {
@@ -18,6 +20,8 @@ function Example() {
 }
 ```
 
+In opposite to [react-redux][], this library only requires a `mapState` function. It is meant to call the `dispatch` function with the action directly. Advanced concepts like
+
 ## Requirements
 
 ⚠️ To use `useStore`, you will need the **unstable and experimental** React 16.7.0-alpha.
@@ -30,7 +34,7 @@ npm install --save use-store
 
 ## Usage
 
-You can use `useStore` with your existing [Redux][https://redux.js.org/introduction] store or with a simple alternative (as outlined in [createStore.js](./example/createStore.js)). This package will export
+You can use `useStore` with your existing [Redux][] store or with a simple alternative (as outlined in [createStore.js](./example/createStore.js)). This package will export
 a [React Context](https://reactjs.org/docs/context.html) consumer (`StoreContext`) as well the `useStore` hook.
 
 This custom hook will expose an API similar to [`useReducer`](https://reactjs.org/docs/hooks-reference.html#usereducer). The only argument for `useStore` is a `mapState` function which is used to select parts of your store to be used within the component that uses the hook. This allows `useStore` to bail out if unnecessary parts change. Every component that uses this custom hook will automatically subscribe to the store.
@@ -106,3 +110,6 @@ Every help on this project is greatly appreciated. To get you started, here's a 
 ## License
 
 [MIT](https://github.com/philipp-spiess/use-store/blob/master/README.md)
+
+[Redux]: https://redux.js.org/introduction
+[react-redux]: https://github.com/reduxjs/react-redux

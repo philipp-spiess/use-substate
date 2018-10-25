@@ -1,7 +1,7 @@
 {
   "name": "use-store",
   "version": "0.0.1",
-  "description": "Lightweight replacement for react-redux using React Hooks",
+  "description": "Lightweight alternative for react-redux using React Hooks",
   "main": "dist/use-store.js",
   "umd:main": "dist/use-store.umd.js",
   "module": "dist/use-store.m.js",
@@ -9,7 +9,7 @@
   "author": "Philipp Spiess",
   "license": "MIT",
   "scripts": {
-    "build": "microbundle -o dist/ --name use-store --compress false --sourcemap false",
+    "build": "microbundle -o dist/ --name use-store --compress trues --sourcemap false",
     "prepublishOnly": "yarn build"
   },
   "files": [
