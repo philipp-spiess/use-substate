@@ -1,8 +1,7 @@
-# React Hook: useStore
+# ⚓️ useStore
 
 Lightweight (<1kB gzipped) alternative for [react-redux][] using React Hooks.
 
-__⚠️ `useStore` can also be used together with [react-redux][] in your existing [Redux][] application.__
 
 ```js
 function Example() {
@@ -24,7 +23,9 @@ In opposite to [react-redux][], this library only requires a `mapState` function
 
 ## Requirements
 
-⚠️ To use `useStore`, you will need the **unstable and experimental** React 16.7.0-alpha.
+__⚠️ To use `useStore`, you will need the unstable and experimental React 16.7.0-alpha.__
+
+`useStore` can also be used together with [react-redux][] in your existing [Redux][] application.
 
 ## Installation
 
