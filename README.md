@@ -13,7 +13,11 @@ function Component() {
     <div>
       {mappedState.count}
 
-      <button onClick={() => dispatch({ type: "INCREMENT" })}>Increment</button>
+      <button
+        onClick={() => dispatch({ type: "INCREMENT" })}
+      >
+        Increment
+      </button>
     </div>
   );
 }
@@ -105,6 +109,12 @@ Every help on this project is greatly appreciated. To get you started, here's a 
 3.  Make changes using your favorite editor.
 4.  Commit your changes ([here](https://chris.beams.io/posts/git-commit/) is a wonderful guide on how to make amazing git commits).
 5.  After a few seconds, a button to create a pull request should be visible inside the [Pull requests](https://github.com/philipp-spiess/use-store/pulls) section.
+
+## Future Improvements
+
+- [ ] Find a better, more outstanding, name that also reflects what this thing is doing. (Current ideas: `useSelector`, `useReduxer`, `useGloducer`, `useStateAtom`, `useGlobalReducer`)
+- [ ] Add Flow and TypeScript types. This is actually very important for this library: Actions must be typed as an enum such that the type system can find out if we use the wrong type.
+- [ ] Improve test harness.
 
 ## License
 
