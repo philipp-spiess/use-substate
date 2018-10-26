@@ -19,7 +19,7 @@ function Example() {
 }
 ```
 
-In opposite to [react-redux][], this library only requires a `mapState` function. It is meant to call the `dispatch` function with the action directly. Advanced concepts like
+In opposite to [react-redux][], this library only requires a `mapState` function. It is meant to call the `dispatch` function with the action directly. Advanced concepts like `connectAdvanced` or `mapDispatchToProps` are deliberately not supported.
 
 ## Requirements
 
