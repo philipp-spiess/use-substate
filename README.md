@@ -4,7 +4,7 @@ Lightweight ([<600B minified + gzipped](https://bundlephobia.com/result?p=use-st
 
 
 ```js
-function Example() {
+function Component() {
   const [mappedState, dispatch] = useStore(state => {
     return { count: state.count };
   });
