@@ -28,6 +28,7 @@ In opposite to [react-redux][], this library only requires a `mapState` function
 ### Features
 
 - ⏬ Lightweight
+- ✅ Concurrent React ready (avoids rendering stale state)
 - ⚛️ Works with your existing Redux-like store
 - 🎮 You’re in full control of your store and can use it outside React as well
 - 🐋 Only updates components that need to be updated
