@@ -25,6 +25,15 @@ function Component() {
 
 In opposite to [react-redux][], this library only requires a `mapState` function. It is meant to call the `dispatch` function with the action directly. Advanced concepts like `connectAdvanced` or `mapDispatchToProps` are deliberately not supported.
 
+### Features
+
+- ⏬ Lightweight
+- ⚛️ Works with your existing Redux-like store
+- 🎮 You’re in full control of your store and can use it outside React as well
+- 🐋 Only updates components that need to be updated
+- 🔂 Uses an external event subscription to short-circuit context propagation (We’ll see if that works out)
+- 🎈 Full Flow and TypeScript support coming soon
+
 ## Requirements
 
 __⚠️ To use `useStore`, you will need the unstable and experimental React 16.7.0-alpha.__
