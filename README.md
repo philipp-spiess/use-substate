@@ -122,7 +122,7 @@ Every help on this project is greatly appreciated. To get you started, here's a 
 
 ## Future Improvements
 
-- [ ] Find a better, more outstanding, name that also reflects what this thing is doing. (Current ideas: `useSelector`, `useReduxer`, `useGloducer`, `useStateAtom`, `useGlobalReducer`, `useShore`)
+- [ ] Find a better, more outstanding, name that also reflects what this thing is doing. (Current ideas: `useSelector`, `useReduxer`, `useGloducer`, `useStateAtom`, `useGlobalReducer`, `useShore`, `useFlux`, `useSharedState`, `useGlobalState`, `useOffShore`, `useTrunk`, `useStoreHouse`, `useDepot`)
 - [ ] Add Flow and TypeScript types. This is actually very important for this library: Actions must be typed as an enum such that the type system can find out if we use the wrong type.
 - [ ] Improve test harness.
 
