@@ -96,7 +96,7 @@ ReactDOM.render(
 
 [![Edit useSubstate Example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/4w406kwy44)
 
-## Comparison To [Redux][]
+## Comparison To Redux
 
 [Redux][] itself is a library used to create stores that can be updated via reducers. In fact, `useSubstate` works flawlessly with your current Redux store.
 
