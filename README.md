@@ -23,16 +23,6 @@ function Component() {
 }
 ```
 
-### Features
-
-- ⏬ Lightweight
-- ✅ Concurrent React ready (avoids rendering stale state)
-- 🐋 Only updates components that need to be updated
-- 🔂 Uses an external event subscription to short-circuit context propagation
-- 🎈 Full Flow and TypeScript support coming soon
-- ⚛️ Works with your existing Redux-like store
-- 🎮 You’re in full control of your store and can use it outside React as well
-
 ## Requirements
 
 __⚠️ To use `useSubstate`, you will need the unstable and experimental React 16.7.0-alpha.__
@@ -44,6 +34,16 @@ __⚠️ To use `useSubstate`, you will need the unstable and experimental React
 ```bash
 npm install --save use-substate
 ```
+
+## Features
+
+- ⏬ Lightweight
+- ✅ Concurrent React ready (avoids rendering stale state)
+- 🐋 Only updates components that need to be updated
+- 🔂 Uses an external event subscription to short-circuit context propagation
+- 🎈 Full Flow and TypeScript support coming soon
+- ⚛️ Works with your existing Redux-like store
+- 🎮 You’re in full control of your store and can use it outside React as well
 
 ## Usage
 
