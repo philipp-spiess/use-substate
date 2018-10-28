@@ -1,6 +1,6 @@
 {
   "name": "use-substate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Subscribe to a subset of your state using using React Hooks",
   "main": "dist/use-substate.js",
   "umd:main": "dist/use-substate.umd.js",
