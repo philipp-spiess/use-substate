@@ -9,7 +9,7 @@
   "author": "Philipp Spiess",
   "license": "MIT",
   "scripts": {
-    "build": "microbundle -o dist/ --name use-substate --compress trues --sourcemap false",
+    "build": "microbundle -o dist/ --name use-substate --compress false --sourcemap false",
     "prepublishOnly": "yarn build"
   },
   "files": [
