@@ -98,7 +98,7 @@ ReactDOM.render(
 
 ## Comparison To Redux
 
-[Redux][] itself is a library used to create stores that can be updated via reducers. In fact, `useSubstate` works flawlessly with your current Redux store.
+[Redux][] is a library used to create stores that can be updated via reducers. In fact, `useSubstate` works flawlessly with your current Redux store.
 
 In opposite to [react-redux][], this library only requires a `selectSubstate` function (similar to [react-redux][]'s `mapStateToProps`). It is meant to call the `dispatch` function with the action directly. Advanced concepts like `connectAdvanced` or `mapDispatchToProps` are deliberately not supported.
 
