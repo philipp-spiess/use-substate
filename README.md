@@ -1,4 +1,4 @@
-# ⚓️ useSubstate
+# 🍣 useSubstate
 
 Lightweight ([<600B minified + gzipped](https://bundlephobia.com/result?p=use-substate)) React Hook to **sub**scribe to a **sub**set of your state.
 
