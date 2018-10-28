@@ -27,7 +27,7 @@ function Component() {
 
 __⚠️ To use `useSubstate`, you will need the unstable and experimental React 16.7.0-alpha.__
 
-`useSubstate` can also be used together with [react-redux][] in your existing [Redux][] application. Check out [Comparison To Redux][#comparison-to-redux] for more infomration.
+`useSubstate` can also be used together with [react-redux][] in your existing [Redux][] application. Check out [Comparison To Redux](#comparison-to-redux) for more information.
 
 ## Installation
 
@@ -47,7 +47,7 @@ npm install --save use-substate
 
 ## Usage
 
-You can use `useSubstate` with your existing [Redux][] store or with a simple alternative (like [`create-state`](https://github.com/philipp-spiess/create-state)). This package will export a [React Context](https://reactjs.org/docs/context.html) consumer (`SubstateContext`) as well the `useSubstate` hook.
+You can use `useSubstate` with your existing [Redux][] store or with a simple alternative (like [create-state](https://github.com/philipp-spiess/create-state)). This package will export a [React Context](https://reactjs.org/docs/context.html) consumer (`SubstateContext`) as well the `useSubstate` hook.
 
 This custom hook will expose an API similar to [`useReducer`](https://reactjs.org/docs/hooks-reference.html#usereducer). The only argument for `useSubstate` is a `selectSubstate` function which is used to select parts of your state to be used within the component that uses the hook. This allows `useSubstate` to bail out if unnecessary parts change. Every component that uses this custom hook will automatically subscribe to the store.
 
@@ -102,7 +102,7 @@ ReactDOM.render(
 
 In opposite to [react-redux][], this library only requires a `mapState` function. It is meant to call the `dispatch` function with the action directly. Advanced concepts like `connectAdvanced` or `mapDispatchToProps` are deliberately not supported.
 
-To use `useSubstate` with your current [`react-redux`][] React application, find the react-redux `Provider` and make sure to wrap it with a `SubstateProvider`:
+To use `useSubstate` with your current [react-redux][] React application, find the react-redux `Provider` and make sure to wrap it with a `SubstateProvider`:
 
 ```diff
 import React from "react";
