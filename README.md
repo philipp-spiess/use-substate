@@ -37,12 +37,12 @@ npm install --save use-substate
 
 ## Features
 
-- ⏬ Lightweight
+- ⏬ Lightweight ([<600B minified + gzipped](https://bundlephobia.com/result?p=use-substate))
+- ⚛️ Works with your existing Redux-like store
 - ✅ Concurrent React ready (avoids rendering stale state)
-- 🐋 Only updates components that need to be updated
+- 🙅‍♀️ Avoids unnecessary re-renders
 - 🔂 Uses an external event subscription to short-circuit context propagation
 - 🎈 Full Flow and TypeScript support coming soon
-- ⚛️ Works with your existing Redux-like store
 - 🎮 You’re in full control of your store and can use it outside React as well
 
 ## Usage
