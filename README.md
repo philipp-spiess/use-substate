@@ -23,6 +23,16 @@ function Component() {
 }
 ```
 
+## Features
+
+- ⏬ Lightweight ([<600B minified + gzipped](https://bundlephobia.com/result?p=use-substate))
+- ⚛️ Works with your existing Redux-like store
+- ✅ Concurrent React ready (avoids rendering stale state)
+- 🙅‍♀️ Avoids unnecessary re-renders
+- 🔂 Uses an external event subscription to short-circuit context propagation
+- 🎈 Full Flow and TypeScript support coming soon
+- 🎮 You’re in full control of your store and can use it outside React as well
+
 ## Requirements
 
 __⚠️ To use `useSubstate`, you will need the unstable and experimental React 16.7.0-alpha.__
@@ -34,16 +44,6 @@ __⚠️ To use `useSubstate`, you will need the unstable and experimental React
 ```bash
 npm install --save use-substate
 ```
-
-## Features
-
-- ⏬ Lightweight ([<600B minified + gzipped](https://bundlephobia.com/result?p=use-substate))
-- ⚛️ Works with your existing Redux-like store
-- ✅ Concurrent React ready (avoids rendering stale state)
-- 🙅‍♀️ Avoids unnecessary re-renders
-- 🔂 Uses an external event subscription to short-circuit context propagation
-- 🎈 Full Flow and TypeScript support coming soon
-- 🎮 You’re in full control of your store and can use it outside React as well
 
 ## Usage
 
