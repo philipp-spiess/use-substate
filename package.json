@@ -1,15 +1,15 @@
 {
-  "name": "use-store",
+  "name": "use-substate",
   "version": "0.0.1",
-  "description": "Lightweight alternative for react-redux using React Hooks",
-  "main": "dist/use-store.js",
-  "umd:main": "dist/use-store.umd.js",
-  "module": "dist/use-store.m.js",
-  "repository": "https://github.com/philipp-spiess/use-store",
+  "description": "Subscribe to a subset of your state using using React Hooks",
+  "main": "dist/use-substate.js",
+  "umd:main": "dist/use-substate.umd.js",
+  "module": "dist/use-substate.m.js",
+  "repository": "https://github.com/philipp-spiess/use-substate",
   "author": "Philipp Spiess",
   "license": "MIT",
   "scripts": {
-    "build": "microbundle -o dist/ --name use-store --compress trues --sourcemap false",
+    "build": "microbundle -o dist/ --name use-substate --compress trues --sourcemap false",
     "prepublishOnly": "yarn build"
   },
   "files": [

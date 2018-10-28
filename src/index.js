@@ -1,45 +1,41 @@
 import React, { useState, useContext, useEffect, useRef } from "react";
 import shallowEqual from "./shallowEqual";
 
-const StoreContext = React.createContext();
+const SubstateContext = React.createContext();
 
-export const StoreProvider = StoreContext.Provider;
+export const SubstateProvider = SubstateContext.Provider;
 
-export function useStore(mapState) {
-  const store = useContext(StoreContext);
+export function useSubstate(selectSubstate) {
+  const store = useContext(SubstateContext);
 
-  const [mappedState, setMappedState] = useState(() => {
+  const [substate, setSubstate] = useState(() => {
     const state = store.getState();
-    return mapState(state);
+    return selectSubstate(state);
   });
-  const prevMappedStateRef = usePreviousRef(mappedState);
+
+  const prevSubstateRef = useRef();
+  useEffect(() => {
+    prevSubstateRef.current = substate;
+  });
 
   useEffect(
     () => {
       const checkForUpdates = () => {
         const nextState = store.getState();
-        const nextMappedState = mapState(nextState);
+        const nextSubstate = selectSubstate(nextState);
 
-        if (shallowEqual(prevMappedStateRef.current, nextMappedState)) {
+        if (shallowEqual(prevSubstateRef.current, nextSubstate)) {
           return;
         }
 
-        setMappedState(nextMappedState);
+        setSubstate(nextSubstate);
       };
       checkForUpdates();
 
       return store.subscribe(checkForUpdates);
     },
-    [store, mapState]
+    [store, selectSubstate]
   );
 
-  return [mappedState, store.dispatch];
-}
-
-function usePreviousRef(value) {
-  const ref = useRef();
-  useEffect(() => {
-    ref.current = value;
-  });
-  return ref;
+  return [substate, store.dispatch];
 }

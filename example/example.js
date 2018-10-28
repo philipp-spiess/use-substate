@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
-import "./styles.css";
-
-import { createStore } from "./createStore";
-import { StoreProvider, useStore } from "../";
+import createStore from "create-state";
+import { SubstateProvider, useSubstate } from "../";
 
 const initialState = { count: 0 };
 function reducer(state, action) {
@@ -18,14 +16,14 @@ function reducer(state, action) {
 const store = createStore(reducer, initialState);
 
 function App() {
-  const [mappedState, dispatch] = useStore(state => {
+  const [substate, dispatch] = useSubstate(state => {
     return { count: state.count };
   });
 
   return (
     <div className="App">
       <p>
-        <strong>{mappedState.count}</strong>
+        <strong>{substate.count}</strong>
       </p>
 
       <button onClick={() => dispatch({ type: "INCREMENT" })}>Increment</button>
@@ -36,8 +34,8 @@ function App() {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <StoreProvider value={store}>
+  <SubstateProvider value={store}>
     <App />
-  </StoreProvider>,
+  </SubstateProvider>,
   rootElement
 );
