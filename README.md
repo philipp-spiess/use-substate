@@ -129,7 +129,7 @@ render(
 
 Special thanks to [@sophiebits](https://github.com/sophiebits) and [@gaearon](https://github.com/gaearon) for helping me spot an issue in my initial implementation and showing me how to fix it.
 
-This library is also heavily influenced by the design of [`useReducer`](https://reactjs.org/docs/hooks-reference.html#usereducer), [react-redux](https://github.com/reduxjs/react-redux), [Reducer components](https://reasonml.github.io/reason-react/docs/en/state-actions-reducer.html) in ReasonReact, [Elm](http://elm-lang.org/), [Reagent (Clojure)](https://reagent-project.github.io/), [Om (Clojure)](https://github.com/omcljs/om), and a lot of other libraries that I have seen over the years. Thank you all for pushing the Web forward ❤️.
+This library is also heavily influenced by the design of [`useReducer`](https://reactjs.org/docs/hooks-reference.html#usereducer), [create-subscription](https://github.com/facebook/react/tree/master/packages/create-subscription), [react-redux](https://github.com/reduxjs/react-redux), [Reducer components](https://reasonml.github.io/reason-react/docs/en/state-actions-reducer.html) in ReasonReact, [Elm](http://elm-lang.org/), [Reagent (Clojure)](https://reagent-project.github.io/), [Om (Clojure)](https://github.com/omcljs/om), and a lot of other libraries that I have seen over the years. Thank you all for pushing the Web forward ❤️.
 
 ## Contributing
 
