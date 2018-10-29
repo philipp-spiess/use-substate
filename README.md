@@ -28,7 +28,7 @@ function Component() {
 - ⏬ Lightweight ([<600B minified + gzipped](https://bundlephobia.com/result?p=use-substate))
 - ⚛️ Works with your existing Redux-like store
 - 🙅‍♀️ Avoids unnecessary re-renders
-- 🔂 Uses an external event subscription to short-circuit context propagation
+- 🔂 Uses an external event subscription to short-circuit context propagation (Making it Concurrent React _Unsafe_)
 - 🎈 Full Flow and TypeScript support coming soon
 - 🎮 You’re in full control of your store and can use it outside React as well
 
