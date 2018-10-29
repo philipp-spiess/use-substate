@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
-import createStore from "create-state";
+import createStore from "create-store";
 import { SubstateProvider, useSubstate } from "../";
 
 const initialState = { count: 0 };

@@ -47,7 +47,7 @@ npm install --save use-substate
 
 ## Usage
 
-You can use `useSubstate` with your existing [Redux][] store or with a simple alternative (like [create-state](https://github.com/philipp-spiess/create-state)). This package will export a [React Context](https://reactjs.org/docs/context.html) consumer (`SubstateContext`) as well the `useSubstate` hook.
+You can use `useSubstate` with your existing [Redux][] store or with a simple alternative (like [create-store](https://github.com/philipp-spiess/create-store)). This package will export a [React Context](https://reactjs.org/docs/context.html) consumer (`SubstateContext`) as well the `useSubstate` hook.
 
 This custom hook will expose an API similar to [`useReducer`](https://reactjs.org/docs/hooks-reference.html#usereducer). The only argument for `useSubstate` is a `selectSubstate` function which is used to select parts of your state to be used within the component that uses the hook. This allows `useSubstate` to bail out if unnecessary parts change. Every component that uses this custom hook will automatically subscribe to the store.
 
@@ -57,7 +57,7 @@ The example below will show all steps necessary to use `useSubstate`:
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
-import createStore from "create-state";
+import createStore from "create-store";
 import { SubstateProvider, useSubstate } from "../";
 
 const initialState = { count: 0 };
