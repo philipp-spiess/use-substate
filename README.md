@@ -57,7 +57,7 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
 import createStore from "create-store";
-import { SubstateProvider, useSubstate } from "../";
+import { SubstateProvider, useSubstate } from "use-substate";
 
 const initialState = { count: 0 };
 function reducer(state, action) {
