@@ -34,7 +34,7 @@ function Component() {
 
 ## Requirements
 
-__⚠️ To use `useSubstate`, you will need the unstable and experimental React 16.7.0-alpha.__
+__⚠️ To use `useSubstate`, you will need the unstable and experimental React 16.7.0-alpha. Check out the [official documentation](https://reactjs.org/docs/hooks-intro.html) or [this blog post](https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889) by Dan Abramov for more information.__
 
 `useSubstate` can also be used together with [react-redux][] in your existing [Redux][] application. Check out [Comparison To Redux](#comparison-to-redux) for more information.
 
