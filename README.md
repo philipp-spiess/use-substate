@@ -124,6 +124,13 @@ render(
 );
 ```
 
+## Other Libraries
+
+Besides the [open issue in `react-redux`](https://github.com/reduxjs/react-redux/issues/1063), there are two other noticeable libraries that solve the a similiar problem:
+
+- [`redux-react-hook`](https://github.com/facebookincubator/redux-react-hook)
+- [`react-use-redux`](https://github.com/martynaskadisa/react-use-redux)
+
 ## Acknowledgements
 
 Special thanks to [@sophiebits](https://github.com/sophiebits) and [@gaearon](https://github.com/gaearon) for helping me spot an issue in my initial implementation and showing me how to fix it.
